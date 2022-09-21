@@ -1,0 +1,10 @@
+.layout-menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu-button {
+	text-transform: capitalize;
+	padding: 12px;
+}

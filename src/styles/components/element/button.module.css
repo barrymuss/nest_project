@@ -1,0 +1,64 @@
+.button {
+	min-width: 0;
+	padding: 6px 12px;
+	text-align: center;
+	text-transform: capitalize;
+	border-radius: 3px;
+	transition: all 0.3s;
+	@apply font-normal text-sm;
+}
+
+.default-button {
+	@apply text-dark border border-dark;
+	transition: all 0.3s;
+}
+
+.default-button:hover,
+.default-button:focus {
+	@apply text-white border-transparent bg-dark;
+	transition: all 0.3s;
+}
+
+.default-button-solid {
+	@apply text-white border border-transparent bg-dark;
+	transition: all 0.3s;
+}
+
+.default-button-solid:hover,
+.default-button-solid:focus {
+	@apply text-dark border-dark border bg-transparent;
+	transition: all 0.3s;
+}
+
+.green-button {
+	@apply text-$green border border-$green;
+	transition: all 0.3s;
+}
+
+.green-button:hover,
+.green-button:focus {
+	@apply text-dark border-transparent bg-$green;
+	transition: all 0.3s;
+}
+
+.text-green-button {
+	@apply text-$green;
+	transition: all 0.3s;
+}
+
+.text-green-button:hover,
+.text-green-button:focus {
+	@apply text-white border-transparent underline underline-offset-8;
+	transition: all 0.3s;
+}
+
+.red-button {
+	@apply text-$red border border-$red;
+	transition: all 0.3s;
+}
+
+.red-button:hover,
+.red-button:focus {
+	@apply text-dark border-transparent bg-$red;
+	transition: all 0.3s;
+}
