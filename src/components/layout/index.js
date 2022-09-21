@@ -3,6 +3,8 @@ import Header from './header';
 import HeadMeta from 'components/meta';
 import styles from 'styles/components/layout/layout.module.css';
 
+import Logo from 'assets/logo.png';
+
 const menuData = [
 	{
 		label: 'about',
@@ -27,11 +29,11 @@ const Layout = ({ children, logo }) => {
 	);
 };
 
-const Portfolio = () => {
+const Portfolio = ({ children, ...props }) => {
 	return (
-		<div>
-			<div>Portofolio</div>
-		</div>
+		<Layout logo={Logo} {...props}>
+			{children}
+		</Layout>
 	);
 };
 

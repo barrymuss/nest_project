@@ -1,3 +1,102 @@
 .section-project {
-	padding: 10rem 16rem;
+	display: grid;
+	grid-template: repeat(2, auto) / 1fr;
+	grid-template-areas:
+		'info'
+		'extra';
+	padding: 10rem 20rem;
+}
+
+.project-row {
+	grid-area: extra;
+	@apply grid grid-cols-6 gap-4 w-full;
+}
+
+.project-item {
+	@apply col-span-3;
+}
+
+.project-item:last-child {
+	@apply col-start-1 col-span-3;
+}
+
+.main {
+	@apply col-span-3;
+}
+
+.mini {
+	@apply grid col-span-full gap-4;
+}
+
+@media only screen and (max-width: 600px) {
+	.section-project {
+		display: grid;
+		grid-template: repeat(2, auto) / 1fr;
+		grid-template-areas:
+			'info'
+			'extra';
+		padding: 1rem;
+	}
+
+	.project-row {
+		@apply grid grid-cols-1 gap-4;
+	}
+
+	.main,
+	.mini,
+	.project-item {
+		@apply col-span-1;
+	}
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+	.section-project {
+		display: grid;
+		grid-template: repeat(2, auto) / 1fr;
+		grid-template-areas:
+			'info'
+			'extra';
+		padding: 1rem;
+	}
+
+	.project-row {
+		@apply grid grid-cols-1 gap-4;
+	}
+
+	.main,
+	.mini,
+	.project-item {
+		@apply col-span-1;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+	.section-project {
+		display: grid;
+		grid-template: repeat(2, auto) / 1fr;
+		grid-template-areas:
+			'info'
+			'extra';
+		padding: 6rem;
+	}
+
+	.project-row {
+		@apply grid grid-cols-4 gap-4;
+	}
+
+	.main {
+		@apply col-span-3;
+	}
+
+	.mini {
+		@apply grid col-span-2 grid-cols-1 gap-4;
+	}
+
+	.project-item {
+		@apply col-span-2;
+	}
+
+	.project-item:last-child {
+		@apply col-span-full;
+	}
 }

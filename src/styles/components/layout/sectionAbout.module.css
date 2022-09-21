@@ -4,7 +4,7 @@
 	grid-template-areas:
 		'info extra'
 		'foot foot';
-	padding: 10rem 16rem;
+	padding: 10rem 20rem;
 }
 
 .info {
@@ -42,18 +42,32 @@
 @media only screen and (max-width: 600px) {
 	.section-about {
 		display: grid;
-		grid-template: 1fr / 1fr;
-		grid-template-areas: 'info';
+		grid-template: auto auto / 1fr;
+		grid-template-areas: 'info' 'extra';
 		padding: 1rem;
+	}
+
+	.extra .extra-image {
+		position: relative;
+		height: 300px;
+		width: 300px;
+		padding: 20px;
 	}
 }
 
 @media only screen and (min-width: 640px) and (max-width: 1023px) {
 	.section-about {
 		display: grid;
-		grid-template: 1fr / 1fr;
-		grid-template-areas: 'info';
-		padding: 10rem;
+		grid-template: auto auto / 1fr;
+		grid-template-areas: 'info' 'extra';
+		padding: 3rem;
+	}
+
+	.extra .extra-image {
+		position: relative;
+		height: auto;
+		width: 500px;
+		padding: 20px;
 	}
 }
 

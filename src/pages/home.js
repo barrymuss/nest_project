@@ -1,12 +1,10 @@
 import React from 'react';
-import Link from 'next/link';
-
 import { useRouter } from 'next/router';
-
-import { Section, Button } from 'components';
+import { PostCard } from 'components';
 import { SectionHead, SectionAbout, SectionProject } from 'modules';
+import getPosts from 'helpers/getPosts';
 
-const Home = () => {
+const Home = ({ posts }) => {
 	const router = useRouter();
 
 	const handleProject = (section) => {
@@ -15,10 +13,20 @@ const Home = () => {
 
 	return (
 		<div>
-			<SectionHead id='head' storyClick={() => handleProject('about')} />
+			<SectionHead id='head' projectClick={() => handleProject('project')} storyClick={() => handleProject('about')} />
 			<SectionAbout id='about' />
-			<SectionProject id='project' />
+			<SectionProject id='project' data={posts} />
 		</div>
 	);
 };
 export default Home;
+
+export const getStaticProps = () => {
+	const posts = getPosts();
+
+	return {
+		props: {
+			posts,
+		},
+	};
+};
