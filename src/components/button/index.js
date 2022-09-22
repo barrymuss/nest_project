@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'styles/components/element/button.module.css';
+import styles from '@styles/components/element/button.module.css';
 
 const Button = ({ children, className, dashed, solid, onClick, type, ...props }) => {
 	const classDashed = 'border-1 border-blue-500';

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Section, Jumbotron, Icon } from 'components';
+import { Section, Jumbotron, Icon } from '@components';
 
-import styles from 'styles/components/layout/sectionContact.module.css';
+import styles from '@styles/components/layout/sectionContact.module.css';
 
 const SectionContact = ({ id, className, ...props }) => {
 	const iconSocial = [

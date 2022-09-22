@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import { Section, Jumbotron } from 'components';
+import { Section, Jumbotron } from '@components';
 
-import picHead from 'assets/pic-head.png';
-import styles from 'styles/components/layout/sectionHead.module.css';
+import picHead from '@assets/pic-head.png';
+import styles from '@styles/components/layout/sectionHead.module.css';
 
 const SectionHead = ({ id, className, projectClick, storyClick, ...props }) => {
 	return (

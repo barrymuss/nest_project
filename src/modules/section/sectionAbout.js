@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import { Section, Jumbotron, Button, Icon } from 'components';
+import { Section, Jumbotron, Button, Icon } from '@components';
 
-import photos from 'assets/pic.png';
-import styles from 'styles/components/layout/sectionAbout.module.css';
+import photos from '@assets/pic.png';
+import styles from '@styles/components/layout/sectionAbout.module.css';
 
 const SectionAbout = ({ id, className, ...props }) => {
 	const clickHandle = () => {

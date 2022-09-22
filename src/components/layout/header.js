@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { Menu } from 'components';
-import styles from 'styles/components/element/head.module.css';
+import { Menu } from '@components';
+import styles from '@styles/components/element/head.module.css';
 import { useRouter } from 'next/router';
 
 const Header = ({ className, headLogo, menuData, mobileFunction }) => {

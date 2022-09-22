@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import Header from './header';
-import HeadMeta from 'components/meta';
-import Button from 'components/button';
-import styles from 'styles/components/layout/layout.module.css';
+import { Header, HeadMeta, Button } from '@components';
+import styles from '@styles/components/layout/layout.module.css';
 
-import Logo from 'assets/logo.png';
-import { menuData } from 'modules/routes';
+import Logo from '@assets/logo.png';
+import { menuData } from '@modules/routes';
 
 const Layout = ({ children, logo }) => {
 	const router = useRouter();

@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
-import { Section, Jumbotron, Card } from 'components';
+import { Section, Jumbotron, Card } from '@components';
 
-import styles from 'styles/components/layout/sectionProject.module.css';
-import photos from 'assets/pic.png';
-import rsi from 'assets/rsi.png';
-import royston from 'assets/royston-min.png';
-import biofarma from 'assets/biofarma.png';
+import styles from '@styles/components/layout/sectionProject.module.css';
+
+import rsi from '@assets/rsi.png';
+import royston from '@assets/royston-min.png';
+import biofarma from '@assets/biofarma.png';
 
 const SectionProject = ({ posts, id, className, data, ...props }) => {
 	return (
