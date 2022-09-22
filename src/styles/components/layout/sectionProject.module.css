@@ -4,7 +4,7 @@
 	grid-template-areas:
 		'info'
 		'extra';
-	padding: 10rem 20rem;
+	padding: 10rem 12rem;
 }
 
 .project-row {
@@ -13,12 +13,12 @@
 }
 
 .project-item {
-	@apply col-span-3;
+	@apply col-span-2;
 }
 
-.project-item:last-child {
-	@apply col-start-1 col-span-3;
-}
+/* .project-item:last-child {
+	@apply col-start-1 col-span-2;
+} */
 
 .main {
 	@apply col-span-3;
@@ -36,6 +36,7 @@
 			'info'
 			'extra';
 		padding: 1rem;
+		height: auto;
 	}
 
 	.project-row {
@@ -57,6 +58,7 @@
 			'info'
 			'extra';
 		padding: 1rem;
+		height: auto;
 	}
 
 	.project-row {
@@ -94,9 +96,5 @@
 
 	.project-item {
 		@apply col-span-2;
-	}
-
-	.project-item:last-child {
-		@apply col-span-full;
 	}
 }

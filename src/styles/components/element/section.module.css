@@ -3,6 +3,5 @@
 	width: 100%;
 	height: 100vh;
 	min-height: 100%;
-	border: 1px solid black;
 	@apply bg-light;
 }

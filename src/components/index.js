@@ -7,4 +7,3 @@ export { default as Section } from './section';
 export { default as Jumbotron } from './jumbotron';
 
 export { default as Card } from './card';
-export { default as PostCard } from './card/PostCard';

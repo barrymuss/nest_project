@@ -52,6 +52,17 @@
 	transition: all 0.3s;
 }
 
+.solid-green-button {
+	@apply text-dark bg-$green border border-transparent;
+	transition: all 0.3s;
+}
+
+.solid-green-button:hover,
+.solid-green-button:focus {
+	@apply text-dark border border-$green bg-transparent;
+	transition: all 0.3s;
+}
+
 .red-button {
 	@apply text-$red border border-$red;
 	transition: all 0.3s;

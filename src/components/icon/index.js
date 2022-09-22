@@ -13,13 +13,13 @@ const Icon = ({ type, className, style, size, color, ...props }) => {
 	);
 };
 
-function SocialIcons({ type, className, size, ...props }) {
+function SocialIcons({ type, className, style, height, width, ...props }) {
 	const sizeProps = {
-		height: 25,
-		width: 25,
+		height: height == null ? 25 : height,
+		width: width == null ? 25 : width,
 	};
 
-	return <SocialIcon network={type} className={className} style={size == null ? sizeProps : size} {...props} />;
+	return <SocialIcon network={type} className={className} style={style == null ? sizeProps : style} {...props} />;
 }
 
 Icon.Social = SocialIcons;

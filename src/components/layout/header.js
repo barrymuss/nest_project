@@ -9,7 +9,7 @@ const Header = ({ className, headLogo, menuData }) => {
 
 	return (
 		<div className={`${styles['header']} ${className}`}>
-			<div className={styles['header-item']} style={{ cursor: 'pointer' }} onClick={() => router.push('/home')}>
+			<div className={styles['header-item']} style={{ cursor: 'pointer' }} onClick={() => router.push('/home#head')}>
 				<Image src={headLogo} width={45} height={45} alt='mainLogo' />
 			</div>
 			<div className={styles['header-item']}>

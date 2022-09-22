@@ -1,6 +1,8 @@
 import React from 'react';
+import Image from 'next/image';
 import { Section, Jumbotron } from 'components';
 
+import picHead from 'assets/pic-head.png';
 import styles from 'styles/components/layout/sectionHead.module.css';
 
 const SectionHead = ({ id, className, projectClick, storyClick, ...props }) => {
@@ -16,7 +18,11 @@ const SectionHead = ({ id, className, projectClick, storyClick, ...props }) => {
 				projectClick={projectClick}
 				storyClick={storyClick}
 			/>
-			<div className={styles['extra']}></div>
+			<div className={styles['extra']}>
+				<div className={styles['image-wrap']}>
+					<Image src={picHead} objectFit='cover' alt='pic_head' />
+				</div>
+			</div>
 		</Section>
 	);
 };

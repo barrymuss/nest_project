@@ -8,6 +8,26 @@ import { Button } from 'components';
 
 const Card = ({ type, className, image, title, subtitle, slug }) => {
 	switch (type) {
+		case 'postcard':
+			return (
+				<div className={`${styles['postcard']}  ${className}`}>
+					<div className='px-6'>
+						<div className={styles['image-postcard']}>
+							<Image src={image} objectFit='contain' layout='responsive' alt='Room Image' />
+						</div>
+
+						<div className={styles['info-postcard']}>
+							<div className={styles['info-title']}>{title}</div>
+							<div className={styles['info-subtitle']}>{subtitle}</div>
+							<div className='flex items-center justify-center'>
+								<Link href='/[slug]' as={`/${slug}`}>
+									<Button solid>Read more</Button>
+								</Link>
+							</div>
+						</div>
+					</div>
+				</div>
+			);
 		case 'vertical':
 			return (
 				<div className={`${styles['card-vertical']} lg:h-full xl:h-full ${className}`}>

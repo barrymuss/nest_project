@@ -1,0 +1,12 @@
+.content-slug {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 100%;
+}
+
+.slug-button {
+	margin-top: 2rem;
+	display: flex;
+	align-items: flex-start;
+}

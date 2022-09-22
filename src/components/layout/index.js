@@ -4,20 +4,7 @@ import HeadMeta from 'components/meta';
 import styles from 'styles/components/layout/layout.module.css';
 
 import Logo from 'assets/logo.png';
-
-const menuData = [
-	{
-		label: 'about',
-		path: 'about',
-		// section: 'second-section',
-	},
-	{
-		label: 'portfolio',
-	},
-	{
-		label: 'contact',
-	},
-];
+import { menuData } from 'modules/routes';
 
 const Layout = ({ children, logo }) => {
 	return (
@@ -31,9 +18,11 @@ const Layout = ({ children, logo }) => {
 
 const Portfolio = ({ children, ...props }) => {
 	return (
-		<Layout logo={Logo} {...props}>
-			{children}
-		</Layout>
+		<div className={styles['layout']}>
+			<HeadMeta title='Barry Musaddiq' />
+			<Header className={styles['layout-header']} menuData={menuData} logo={Logo} />
+			<div className={styles['inner-layout']}>{children}</div>
+		</div>
 	);
 };
 

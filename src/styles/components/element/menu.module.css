@@ -8,3 +8,16 @@
 	text-transform: capitalize;
 	padding: 12px;
 }
+
+.mobile-menu {
+	display: none;
+}
+
+@media only screen and (max-width: 600px) {
+	.mobile-menu {
+		display: contents;
+	}
+	.menu-button {
+		display: none;
+	}
+}

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { PostCard } from 'components';
-import { SectionHead, SectionAbout, SectionProject } from 'modules';
+import { SectionHead, SectionAbout, SectionProject, SectionContact } from 'modules';
 import getPosts from 'helpers/getPosts';
 
 const Home = ({ posts }) => {
@@ -13,9 +12,14 @@ const Home = ({ posts }) => {
 
 	return (
 		<div>
-			<SectionHead id='head' projectClick={() => handleProject('project')} storyClick={() => handleProject('about')} />
+			<SectionHead
+				id='head'
+				projectClick={() => handleProject('portfolio')}
+				storyClick={() => handleProject('about')}
+			/>
 			<SectionAbout id='about' />
-			<SectionProject id='project' data={posts} />
+			<SectionContact id='contact' />
+			<SectionProject id='portfolio' data={posts} />
 		</div>
 	);
 };

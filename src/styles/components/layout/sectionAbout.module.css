@@ -4,7 +4,7 @@
 	grid-template-areas:
 		'info extra'
 		'foot foot';
-	padding: 10rem 20rem;
+	padding: 10rem 12rem;
 }
 
 .info {
@@ -33,41 +33,52 @@
 }
 
 .extra .extra-image {
-	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: auto;
-	width: calc(100% - 18px);
-	padding: 20px;
+	width: calc(100% - 20px);
 }
 
 @media only screen and (max-width: 600px) {
 	.section-about {
 		display: grid;
-		grid-template: auto auto / 1fr;
+		grid-template: repeat(2, 0.5fr) / 1fr;
 		grid-template-areas: 'info' 'extra';
-		padding: 1rem;
+		padding: 6rem 1rem;
+		height: auto;
+	}
+
+	.info {
+		height: auto;
 	}
 
 	.extra .extra-image {
-		position: relative;
-		height: 300px;
-		width: 300px;
-		padding: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: auto;
+		width: 100%;
+		padding: 1rem;
 	}
 }
 
 @media only screen and (min-width: 640px) and (max-width: 1023px) {
 	.section-about {
 		display: grid;
-		grid-template: auto auto / 1fr;
-		grid-template-areas: 'info' 'extra';
+		grid-template: repeat(2, 0.5fr) / 1fr;
+		grid-template-areas:
+			'extra'
+			'info';
 		padding: 3rem;
 	}
 
 	.extra .extra-image {
-		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		height: auto;
-		width: 500px;
-		padding: 20px;
+		width: 300px;
 	}
 }
 
@@ -77,5 +88,14 @@
 		grid-template: 1fr / 0.8fr 1fr;
 		grid-template-areas: 'info extra';
 		padding: 6rem;
+	}
+
+	.extra .extra-image {
+		@apply w-full h-auto align-middle border-none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: auto;
+		width: 300px;
 	}
 }

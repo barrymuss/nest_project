@@ -17,6 +17,18 @@ const Button = ({ children, className, dashed, solid, onClick, type, ...props })
 					{children}
 				</button>
 			);
+		case 'green-solid':
+			return (
+				<button
+					className={`${styles.button} ${styles['solid-green-button']} ${dashed ? classDashed : ''}  ${
+						solid ? styles.solid : ''
+					} ${className}`}
+					onClick={onClick}
+					{...props}
+				>
+					{children}
+				</button>
+			);
 		case 'text-green':
 			return (
 				<button
