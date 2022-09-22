@@ -1,10 +1,10 @@
 .section-contact {
 	display: grid;
-	grid-template: 1fr / 0.6fr 1fr;
+	grid-template: auto / 0.6fr 1fr;
 	grid-template-areas: 'info extra';
 	padding: 2rem 12rem;
 	@apply bg-dark;
-	height: 100%;
+	height: auto;
 }
 
 .icon-contact {
@@ -22,7 +22,7 @@
 		grid-template: 1fr / 1fr;
 		grid-template-areas: 'info';
 		padding: 1rem;
-		height: auto;
+
 		@apply bg-dark;
 	}
 
@@ -37,7 +37,7 @@
 		grid-template: 1fr / 1fr;
 		grid-template-areas: 'info';
 		padding: 1rem 3rem;
-		height: auto;
+
 		@apply bg-dark;
 	}
 

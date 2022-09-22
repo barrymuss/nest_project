@@ -11,7 +11,7 @@ const Home = ({ posts }) => {
 	};
 
 	return (
-		<div>
+		<>
 			<SectionHead
 				id='head'
 				projectClick={() => handleProject('portfolio')}
@@ -20,7 +20,7 @@ const Home = ({ posts }) => {
 			<SectionAbout id='about' />
 			<SectionContact id='contact' />
 			<SectionProject id='portfolio' data={posts} />
-		</div>
+		</>
 	);
 };
 export default Home;

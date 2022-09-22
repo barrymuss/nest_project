@@ -20,7 +20,7 @@ const Card = ({ type, className, image, title, subtitle, slug }) => {
 							<div className={styles['info-title']}>{title}</div>
 							<div className={styles['info-subtitle']}>{subtitle}</div>
 							<div className='flex items-center justify-center'>
-								<Link href='/[slug]' as={`/${slug}`}>
+								<Link href='/[slug]' as={`/${slug}`} passHref>
 									<Button solid>Read more</Button>
 								</Link>
 							</div>

@@ -2,6 +2,6 @@
 	padding: 12px calc(5% - 18px);
 	width: 100%;
 	height: 100vh;
-	min-height: 100%;
+
 	@apply bg-light;
 }

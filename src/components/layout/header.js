@@ -4,7 +4,7 @@ import { Menu } from 'components';
 import styles from 'styles/components/element/head.module.css';
 import { useRouter } from 'next/router';
 
-const Header = ({ className, headLogo, menuData }) => {
+const Header = ({ className, headLogo, menuData, mobileFunction }) => {
 	const router = useRouter();
 
 	return (
@@ -13,7 +13,7 @@ const Header = ({ className, headLogo, menuData }) => {
 				<Image src={headLogo} width={45} height={45} alt='mainLogo' />
 			</div>
 			<div className={styles['header-item']}>
-				<Menu data={menuData} />
+				<Menu data={menuData} mobileFunction={mobileFunction} />
 			</div>
 		</div>
 	);

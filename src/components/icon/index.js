@@ -2,12 +2,12 @@ import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import * as icons from './iconasset';
 
-const Icon = ({ type, className, style, size, color, ...props }) => {
+const Icon = ({ type, className, style, size, height, width, color, ...props }) => {
 	const Component = icons[type];
 	return (
 		<Component
-			style={{ fontSize: `${size}px`, color: `#${color}`, ...style }}
-			className={`h-4 w-4 ${className}`}
+			style={{ fontSize: `${size}px`, height: `${height}px`, width: `${width}px`, color: `#${color}`, ...style }}
+			className={` ${className}`}
 			{...props}
 		/>
 	);

@@ -31,18 +31,16 @@ const SectionContact = ({ id, className, ...props }) => {
 			>
 				{iconSocial.map((icons) => {
 					return (
-						<>
-							<Icon.Social
-								className={styles['icon-contact']}
-								type={icons.type}
-								bgColor='#06D6A0'
-								fgColor='transparent'
-								height={40}
-								width={40}
-								key={icons.type}
-								onClick={() => window.open(`${icons.link}`, '_blank')}
-							/>
-						</>
+						<Icon.Social
+							className={styles['icon-contact']}
+							type={icons.type}
+							bgColor='#06D6A0'
+							fgColor='transparent'
+							height={40}
+							width={40}
+							key={icons.type}
+							onClick={() => window.open(`${icons.link}`, '_blank')}
+						/>
 					);
 				})}
 			</Jumbotron>

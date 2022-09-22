@@ -1,17 +1,17 @@
 export const menuData = [
 	{
 		label: 'about',
-		path: '',
+		path: 'home',
 		section: 'about',
 	},
 	{
 		label: 'portfolio',
-		path: '',
+		path: 'home',
 		section: 'portfolio',
 	},
 	{
 		label: 'contact',
-		path: '',
+		path: 'home',
 		section: 'contact',
 	},
 ];
