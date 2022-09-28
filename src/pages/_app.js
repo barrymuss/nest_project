@@ -1,7 +1,7 @@
-import { Layout, Section } from 'components';
+import { Layout, Section } from '@components';
 import { useRouter } from 'next/router';
-import Logo from 'assets/logo.png';
-import 'styles/globals.css';
+import Logo from '@assets/logo.png';
+import '@styles/globals.css';
 import Post from './[slug]';
 
 function MyApp({ Component, pageProps }) {

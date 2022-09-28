@@ -1,14 +1,14 @@
 {
 	"compilerOptions": {
-		"baseUrl": "src",
+		"baseUrl": ".",
 		"paths": {
-			"styles/*": ["src/styles/*"],
-			"assets/*": ["src/assets/*"],
-			"components/*": ["src/components/*"],
-			"modules/*": ["src/modules/*"],
-			"pages/*": ["src/pages/*"],
-			"posts/*": ["src/posts/*"],
-			"helpers/*": ["src/helpers/*"]
+			"@styles/*": ["./src/styles/*"],
+			"@assets/*": ["./src/assets/*"],
+			"@components": ["./src/components/index.js"],
+			"@modules/*": ["./src/modules/*"],
+			"@pages/*": ["./src/pages/*"],
+			"@posts/*": ["./src/posts/*"],
+			"@helpers/*": ["./src/helpers/*"]
 		}
 	},
 	"include": ["src", "src/**/*", "script/**/*"],

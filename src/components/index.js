@@ -7,3 +7,5 @@ export { default as Section } from './section';
 export { default as Jumbotron } from './jumbotron';
 
 export { default as Card } from './card';
+export { default as HeadMeta } from './meta';
+export { default as Header } from './layout/header';

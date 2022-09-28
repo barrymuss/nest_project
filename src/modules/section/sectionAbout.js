@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import { Section, Jumbotron, Button, Icon } from 'components';
+import { Section, Jumbotron, Button, Icon } from '@components';
 
-import photos from 'assets/pic.png';
-import styles from 'styles/components/layout/sectionAbout.module.css';
+import photos from '@assets/pic.png';
+import styles from '@styles/components/layout/sectionAbout.module.css';
 
 const SectionAbout = ({ id, className, ...props }) => {
 	const clickHandle = () => {
@@ -18,9 +18,6 @@ const SectionAbout = ({ id, className, ...props }) => {
 					title='Barry Musaddiq'
 					subtitle="I'm motivated to develop my skill and grow profesionally. with two years experience as UI UX designer and UI Engineer, i'm very confident of my skill in design, prototyping, and testing to come up with interesting ideas and usefull design."
 				>
-					<Button dashed className='mr-4'>
-						My Project
-					</Button>
 					<Button solid className={styles['foot-button']} onClick={clickHandle}>
 						Linkedin
 					</Button>

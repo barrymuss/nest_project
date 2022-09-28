@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { SectionHead, SectionAbout, SectionProject, SectionContact } from 'modules';
-import getPosts from 'helpers/getPosts';
+import { SectionHead, SectionAbout, SectionProject, SectionContact } from '@modules/index';
+import getPosts from '@helpers/getPosts';
 
 const Home = ({ posts }) => {
 	const router = useRouter();
@@ -14,6 +14,7 @@ const Home = ({ posts }) => {
 		<>
 			<SectionHead
 				id='head'
+				data-testid='head'
 				projectClick={() => handleProject('portfolio')}
 				storyClick={() => handleProject('about')}
 			/>

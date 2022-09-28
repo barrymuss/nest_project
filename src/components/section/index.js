@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'styles/components/element/section.module.css';
+import styles from '@styles/components/element/section.module.css';
 
 const Section = ({ id, className, children }) => {
 	return (

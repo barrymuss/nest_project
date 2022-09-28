@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from 'components/button';
-import styles from 'styles/components/element/jumbotron.module.css';
+import { Button } from '@components';
+import styles from '@styles/components/element/jumbotron.module.css';
 
 const Jumbotron = ({ type, className, label, title, subtitle, jumboFoot, projectClick, storyClick, children }) => {
 	switch (type) {

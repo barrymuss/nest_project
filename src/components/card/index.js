@@ -2,9 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import styles from 'styles/components/element/card.module.css';
+import styles from '@styles/components/element/card.module.css';
 
-import { Button } from 'components';
+import { Button } from '@components';
 
 const Card = ({ type, className, image, title, subtitle, slug }) => {
 	switch (type) {

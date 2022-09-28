@@ -1,9 +1,9 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 
-import Icon from 'components/icon';
-import Button from 'components/button';
-import styles from 'styles/components/element/menu.module.css';
+import { Icon, Button } from '@components';
+
+import styles from '@styles/components/element/menu.module.css';
 
 const Menu = ({ data, className, mobileFunction }) => {
 	const router = useRouter();

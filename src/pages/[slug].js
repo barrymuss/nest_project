@@ -1,13 +1,16 @@
-import { MDXRemote } from 'next-mdx-remote';
-import getPost from 'helpers/getPost';
-import getPosts from 'helpers/getPosts';
+// import { MDXRemote } from 'next-mdx-remote';
+import { useRouter } from 'next/router';
+import getPost from '@helpers/getPost';
+import getPosts from '@helpers/getPosts';
 import { serialize } from 'next-mdx-remote/serialize';
 import { Fragment } from 'react';
-import Image from 'next/image';
-import { Jumbotron, Button, Section } from 'components';
 
-import styles from 'styles/components/layout/slug.module.css';
+import { Jumbotron, Button, Section } from '@components';
+
+import styles from '@styles/components/layout/slug.module.css';
+
 const Post = ({ data, content }) => {
+	const router = useRouter();
 	const handleLink = (link) => {
 		window.open(`${link}`, '_blank');
 	};
@@ -21,7 +24,7 @@ const Post = ({ data, content }) => {
 						<div className={styles['content-slug']}>
 							{data.story}
 							<div className={styles['slug-button']}>
-								<Button dashed className='mr-4'>
+								<Button dashed className='mr-4' onClick={() => router.push('/home#portfolio')}>
 									My Project
 								</Button>
 								{data.link != null && (
