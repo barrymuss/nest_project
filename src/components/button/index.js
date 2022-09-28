@@ -8,6 +8,7 @@ const Button = ({ children, className, dashed, solid, onClick, type, ...props })
 		case 'green':
 			return (
 				<button
+					role='button'
 					className={`${styles.button} ${styles['green-button']} ${dashed ? classDashed : ''}  ${
 						solid ? styles.solid : ''
 					} ${className}`}
@@ -20,6 +21,7 @@ const Button = ({ children, className, dashed, solid, onClick, type, ...props })
 		case 'green-solid':
 			return (
 				<button
+					role='button'
 					className={`${styles.button} ${styles['solid-green-button']} ${dashed ? classDashed : ''}  ${
 						solid ? styles.solid : ''
 					} ${className}`}
@@ -32,6 +34,7 @@ const Button = ({ children, className, dashed, solid, onClick, type, ...props })
 		case 'text-green':
 			return (
 				<button
+					role='button'
 					className={`${styles.button} ${styles['text-green-button']} ${dashed ? classDashed : ''}  ${
 						solid ? styles.solid : ''
 					} ${className}`}
@@ -44,6 +47,7 @@ const Button = ({ children, className, dashed, solid, onClick, type, ...props })
 		case 'red':
 			return (
 				<button
+					role='button'
 					className={`${styles.button} ${styles['red-button']} ${dashed ? classDashed : ''}  ${
 						solid ? styles.solid : ''
 					} ${className}`}
@@ -56,6 +60,7 @@ const Button = ({ children, className, dashed, solid, onClick, type, ...props })
 		default:
 			return (
 				<button
+					role='button'
 					className={`${styles.button}  ${className} ${dashed ? styles['default-button'] : ''}  ${
 						solid ? styles['default-button-solid'] : ''
 					} ${className}`}
