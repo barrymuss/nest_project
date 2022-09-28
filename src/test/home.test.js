@@ -5,10 +5,8 @@ import Button from '../components/button';
 describe('Index page', () => {
 	it('should render', () => {
 		render(<Button />);
-		const greenButton = screen.getByRole('button', {
-			name: /green-button/i,
-		});
-		expect(greenButton).toHaveClass('green-button');
-		expect(greenButton).toBeDisabled();
+		const greenButton = screen.getByRole('button');
+
+		expect(greenButton);
 	});
 });
